@@ -57,9 +57,11 @@
             window.location.href = '/temperature';
             } else {
             toast.error('Sign up failed: ' + response.data.message);
+            console.log(response.data.message)
             }
         } catch (error) {
             toast.error('An error occurred while signing up, please try again later');
+            console.log(error)
         }
         },
     },
